@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE-edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<title> POLICIA CIVIL </title>
+ 
+</head>
+
+      <body>
+      
+        <header>
+<div>
+<font color="white">
+
+</font>
+<h6>By: DUFF MEN</h6>
+</div>
+
+<img src="POLICIA CIVIL LOGOTO.png">
+
+        </header>>
+             
+
+
+        
+    
+
+
+          <div class="container">
+          <nav class="menu">  
+          <input type="checkbox" name="menucircular" id="menucircular" class="menucircular">
+          <label for="menucircular" class="menu-btn">
+          <span class="linha linha-1"></span>
+          <span class="linha linha-2"></span>
+          <span class="linha linha-3"></span>
+         </label>
+
+         <a href="bate-ponto.html" class="menu-a ai-1">
+         <i class="fas fa-fingerprint" > </i>
+         </a>
+
+         <a href="VIATURA.html" class="menu-a ai-2">
+            <i class="	fas fa-car-alt"></i>
+            </a>
+
+            <a href="#" class="menu-a ai-3">
+                <i class="fas fa-file-signature" ></i>   </i>
+                </a>
+
+                <a href="FARDAMENTOS MASCULINO.html" class="menu-a ai-4">
+                    <i class="fas fa-male" ></i>   </i>
+                    </a>
+
+                    <a href="FARDAMENTO FEMININO.html" class="menu-a ai-5">
+                        <i class="	fas fa-female" ></i>   </i>
+                        </a>
+
+                        <a href="ARMAMENTO.html" class="menu-a ai-6">
+                            <i class=" fas fa-solid fa-gun" ></i>   </i>
+                            </a>
+
+                            <a href="REGRAS PROMOÇAO.html" class="menu-a ai-7">
+                                <i class="fas fa-line-chart" ></i>   </i>
+                                </a>
+
+                </nav>
+
+ 
+
+                     <style>
+*{ 
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    }
+    
+    body, html{
+         
+     position: relative;
+     background-color: #D6AE34;
+     width: 100%;
+     height: 100vh;
+    }
+    
+    .menucircular {
+         display: none;
+    }
+    
+    .linha{
+        background-color: #aaa;
+        width: 25px;
+        height: 3px;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    margin-left: -12px;
+    margin-top: -1px;
+    }
+    
+    .linha-1{
+      -webkit-transform: translate3d(0, -8px, 0);
+      transform: translate3d(0, -8px, 0);
+    
+    }
+    
+    .linha-2{
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    
+    }
+    
+    .linha-3{
+      -webkit-transform: translate3d(0, 8px, 0);
+      transform: translate3d(0, 8px, 0);
+    
+    }
+.menucircular:checked + .menu-btn .linha-1{
+
+-webkit-transform: translate3d(0,0,0) rotate(45deg);
+transform: translate3d(0,0,0) rotate(45deg);
+
+}
+    
+.menucircular:checked + .menu-btn .linha-2{
+
+  -webkit-transform: translate3d(0,0,0) scale(0.1,1.0);
+  transform: translate3d(0,0,0) scale(0.1,1.0);
+  
+  }
+    
+  
+  .menucircular:checked + .menu-btn .linha-3{
+
+    -webkit-transform: translate3d(0,0,0) rotate(-45deg);
+    transform: translate3d(0,0,0) rotate(-45deg);
+    
+    }
+        
+    .menu
+    
+    {
+  width: 70px;
+  height: 70px;  
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+margin: auto;
+font-size: 30px;    
+
+}
+.menu-btn, .menu-a
+
+{
+color: #ffff;
+width: 70px;
+height: 70px;
+line-height: 70px;
+position: absolute;
+border: 2px solid #282828;
+border-radius: 50%;
+text-align: center;
+background-color: #131313;
+-webkit-transform: translate3d(0,0,0);
+transform: all 0.2s ease-in-out;
+
+}
+
+.menu-btn 
+{
+z-index: 2;
+cursor: pointer;
+-webkit-transform: scale(1.1, 1.1) translate3d(0,0,0);
+transform: scale(1.1, 1.1) translate3d(0,0,0);
+-webkit-transition-timing-function: cubic-bezier(.02,.09,.35,1.35);
+transition-timing-function: cubic-bezier(.02,.09,.35,1.35);
+}
+
+.menucircular:checked ~ .menu-a:nth-child(3)
+{  
+ -webkit-transition-duration:  .3s;
+transition-duration: .3s;
+-webkit-transform: translate3d(0.1px, -100px, 0);
+transform: translate3d(0.1px, -100px, 0);
+
+}
+
+.menucircular:checked ~ .menu-a:nth-child(4)
+{  
+ -webkit-transition-duration:  .35s;
+transition-duration: .35s;
+-webkit-transform: translate3d(90px, -50px, 0);
+transform: translate3d(90px, -50px, 0);
+
+}
+
+.menucircular:checked ~ .menu-a:nth-child(6)
+{  
+ -webkit-transition-duration:  .4s;
+transition-duration: .4s;
+-webkit-transform: translate3d(90px, 50px, 0);
+transform: translate3d(90px, 50px, 0);
+
+}
+
+.menucircular:checked ~ .menu-a:nth-child(9)
+{  
+ -webkit-transition-duration:  .45s;
+transition-duration: .45s;
+-webkit-transform: translate3d(0.1px, 100px, 0);
+transform: translate3d(0.1px, 100px, 0);
+
+}
+
+.menucircular:checked ~ .menu-a:nth-child(7)
+{  
+  -webkit-transition-duration:  .5s;
+  transition-duration: .5s;
+  -webkit-transform: translate3d(-90px, 50px, 0);
+  transform: translate3d(-90px, 50px, 0);
+
+}
+
+.menucircular:checked ~ .menu-a:nth-child(8)
+{  
+ -webkit-transition-duration:  .55s;
+transition-duration: .55s;
+-webkit-transform: translate3d(-90px, -50px, 0);
+transform: translate3d(-90px, -50px, 0);
+
+}
+
+.menucircular:checked + .menu-btn 
+
+{
+-webkit-transition: all .5s linear;
+transition: all .5s linear;
+-webkit-transform: scale(0.9, 0.9) translate(0,0,0);
+transform: scale(0.9, 0.9) translate(0,0,0);
+}
+
+.menucircular:checked ~.menu-a 
+
+{
+
+-webkit-transition-timing-function: cubic-bezier(.27, .68, .53, .3);
+transition-timing-function: cubic-bezier(.27, .68, .53, .3);
+
+}
+
+.menu-btn:hover
+{
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  box-shadow: inset 1px 1px 2px #f0f, inset 1px -1px 2px #0340d0,
+  inset -1px 1px 2px #efff0c, inset -1px -1px 2px #f00;
+  }
+
+
+  .ai-1 
+  {
+background-color: #080908;
+  }
+
+  .ai-1:hover
+  {
+background-color: rgb(254, 254, 254);
+color:#3373f4
+}
+
+.ai-2 
+  {
+background-color: #080908;
+  }
+
+  .ai-2:hover
+  {
+background-color: rgb(255, 255, 255);
+color:#000000
+}
+
+.ai-5
+  {
+background-color: #010101;
+  }
+
+  .ai-5:hover
+  {
+background-color: rgb(255, 255, 255);
+color:#fb0b8f
+}
+
+.ai-4
+  {
+background-color: #090b09;
+  }
+
+  .ai-4:hover
+  {
+background-color: rgb(255, 255, 255);
+color:#2800f0
+}
+
+.ai-6
+  {
+background-color: #090b09;
+  }
+
+  .ai-6:hover
+  {
+background-color: rgb(255, 255, 255);
+color:#f11313
+}
+
+.ai-7
+  {
+background-color: #090b09;
+  }
+
+  .ai-7:hover
+  {
+background-color: rgb(255, 255, 255);
+color:#b3f806
+}
+
+
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+header{
+
+width: 100%;
+height: 350px;
+background-color: #313338;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+h1{
+background-color: #000000;
+
+}
+
+h6{
+  color: #000000;
+  position:absolute;
+  right:-5%;
+  top:50%;
+  margin-right:100px;
+  margin-top:320px;
+}
+
+
+                     </style>
+       
+       
+          
+
+
+
+
+
+
+
+
+
+
+     </body>    
+
+
+
+    
